@@ -1,0 +1,36 @@
+IP: 127.0.0.1
+User-Agent: Mozilla/5.0 (X11; Linux i686; rv:102.0) Gecko/20100101 Firefox/102.0
+
+IP: 127.0.0.1
+User-Agent: Mozilla/5.0 (X11; Linux i686; rv:102.0) Gecko/20100101 Firefox/102.0
+
+IP: 127.0.0.1
+User-Agent: Mozilla/5.0 (X11; Linux i686; rv:102.0) Gecko/20100101 Firefox/102.0
+
+IP: 127.0.0.1
+User-Agent: Mozilla/5.0 (X11; Linux i686; rv:102.0) Gecko/20100101 Firefox/102.0
+
+IP: 127.0.0.1
+User-Agent: Mozilla/5.0 (X11; Linux i686; rv:102.0) Gecko/20100101 Firefox/102.0
+
+IP: 127.0.0.1
+User-Agent: Mozilla/5.0 (X11; Linux i686; rv:102.0) Gecko/20100101 Firefox/102.0
+
+IP: 127.0.0.1
+User-Agent: Mozilla/5.0 (X11; Linux i686; rv:102.0) Gecko/20100101 Firefox/102.0
+
+IP: 127.0.0.1
+User-Agent: Mozilla/5.0 (X11; Linux i686; rv:102.0) Gecko/20100101 Firefox/102.0
+
+IP: 127.0.0.1
+User-Agent: Mozilla/5.0 (X11; Linux i686; rv:102.0) Gecko/20100101 Firefox/102.0
+
+IP: 127.0.0.1
+User-Agent: Mozilla/5.0 (X11; Linux i686; rv:102.0) Gecko/20100101 Firefox/102.0
+
+IP: 192.168.43.46
+User-Agent: Mozilla/5.0 (X11; Linux i686; rv:102.0) Gecko/20100101 Firefox/102.0
+
+IP: ::1
+User-Agent: Mozilla/5.0 (X11; Linux i686; rv:102.0) Gecko/20100101 Firefox/102.0
+

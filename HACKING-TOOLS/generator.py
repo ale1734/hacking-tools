@@ -10,7 +10,7 @@ from colores import *
 from subprocess import *
 
 def carpeta():
-	cd = 'cd', '/HACKING-TOOLS/Diccionarios/'
+	cd = 'cd', '/Diccionarios'
     cd2 = list(cd)
     cd3 = subprocess.call(cd2)
 carpeta()
